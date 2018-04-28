@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gerenciadorderelatorios.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TabPane layoutX="-74.0" layoutY="-86.0" prefHeight="200.0" prefWidth="320.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Relatório">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane layoutX="14.0" layoutY="99.0" prefHeight="771.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <center>
+                              <HBox maxHeight="300.0" prefHeight="225.0" prefWidth="1024.0" spacing="10.0" BorderPane.alignment="TOP_CENTER">
+                                 <children>
+                                    <Label text="Comando SQL:" />
+                                    <TextArea prefHeight="371.0" prefWidth="396.0" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </center>
+                           <top>
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <VBox prefHeight="95.0" prefWidth="302.0">
+                                       <children>
+                                          <HBox spacing="10.0">
+                                             <children>
+                                                <Label text="Código do relatório:" />
+                                                <TextField />
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                             <children>
+                                                <Label text="Nome do relatório  :" />
+                                                <TextField alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="147.0">
+                                                   <opaqueInsets>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </opaqueInsets>
+                                                </TextField>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" />
+                                             </padding>
+                                             <opaqueInsets>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </opaqueInsets>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="90.0" prefWidth="305.0">
+                                       <children>
+                                          <HBox prefHeight="100.0" prefWidth="241.0" spacing="10.0">
+                                             <children>
+                                                <Label text="Orientação:" />
+                                                <ChoiceBox prefWidth="150.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                             <children>
+                                                <Label text="Margem esquerda:" />
+                                                <TextField prefWidth="30.0" />
+                                                <Label text="Margem direita:">
+                                                   <padding>
+                                                      <Insets right="4.0" />
+                                                   </padding>
+                                                </Label>
+                                                <TextField layoutX="110.0" layoutY="10.0" prefWidth="30.0" />
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                             <children>
+                                                <Label text="Margem superior:">
+                                                   <padding>
+                                                      <Insets right="5.0" />
+                                                   </padding>
+                                                </Label>
+                                                <TextField prefWidth="30.0" />
+                                                <Label text="Margem inferior:" />
+                                                <TextField layoutX="105.0" layoutY="10.0" prefWidth="30.0" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+                           </top>
+                           <right>
+                              <ToolBar prefHeight="666.0" prefWidth="117.0" BorderPane.alignment="CENTER">
+                                <items>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" text="Salvar" textAlignment="CENTER" />
+                                       </children>
+                                    </VBox>
+                                </items>
+                              </ToolBar>
+                           </right>
+                        </BorderPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Bandas do relatório">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane layoutX="67.0" layoutY="193.0" prefHeight="771.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <left>
+                              <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                <columns>
+                                  <TableColumn prefWidth="104.0" text="Nome da Banda" />
+                                  <TableColumn prefWidth="95.0" text="Tipo de Banda" />
+                                </columns>
+                              </TableView>
+                           </left>
+                           <top>
+                              <TitledPane animated="false" text="Cadastro de bandas" BorderPane.alignment="CENTER">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </TitledPane>
+                           </top>
+                           <center>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <top>
+                                    <TitledPane animated="false" text="Criação de campo" BorderPane.alignment="CENTER">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                      </content>
+                                    </TitledPane>
+                                 </top>
+                                 <center>
+                                    <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                      <columns>
+                                        <TableColumn prefWidth="85.0" text="Seq. Criação" />
+                                        <TableColumn prefWidth="106.0" text="Nome do campo" />
+                                          <TableColumn prefWidth="106.0" text="Tipo de campo" />
+                                          <TableColumn prefWidth="87.0" text="Posição X" />
+                                          <TableColumn prefWidth="87.0" text="Posição Y" />
+                                          <TableColumn prefWidth="87.0" text="Altura" />
+                                          <TableColumn prefWidth="87.0" text="Largura" />
+                                      </columns>
+                                    </TableView>
+                                 </center>
+                              </BorderPane>
+                           </center>
+                        </BorderPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Consulta">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane layoutX="175.0" layoutY="41.0" prefHeight="771.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <center>
+                              <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="Código" />
+                                  <TableColumn prefWidth="75.0" text="Nome" />
+                                    <TableColumn prefWidth="115.0" text="Última alteração" />
+                                    <TableColumn prefWidth="118.0" text="Último usuário" />
+                                </columns>
+                              </TableView>
+                           </center>
+                           <top>
+                              <VBox prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                       <children>
+                                          <Label text="Código:" />
+                                          <TextField prefHeight="25.0" prefWidth="150.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                       <children>
+                                          <Label text="Nome:" />
+                                          <TextField prefHeight="25.0" prefWidth="152.0" />
+                                       </children>
+                                    </HBox>
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="202.0" text="Pesquisar" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </top>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Imports e exports">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane layoutX="66.0" layoutY="99.0" prefHeight="771.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <top>
+                              <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label text="Caminho do relatório" />
+                                 </children>
+                              </HBox>
+                           </top>
+                        </BorderPane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+    </children>
+</AnchorPane>
